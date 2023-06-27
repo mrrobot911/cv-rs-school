@@ -1,0 +1,72 @@
+/* Обычный */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+	src: url(../fonts/Roboto-Regular.ttf); 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayFairDisplay';
+    font-style: normal;
+    font-weight: 400;
+	src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayFairDisplay';
+    font-style: italic;
+    font-weight: 400;
+	src: url(../fonts/PlayfairDisplay-Italic.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'PlayFairDisplay';
+    font-style: normal;
+    font-weight: 500;
+	src: url(../fonts/PlayfairDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayFairDisplay';
+    font-style: italic;
+    font-weight: 500;
+	src: url(../fonts/PlayfairDisplay-MediumItalic.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayFairDisplay';
+    font-style: normal;
+    font-weight: 700;
+	src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayFairDisplay';
+    font-style: italic;
+    font-weight: 700;
+	src: url(../fonts/PlayfairDisplay-BoldItalic.ttf);
+}
+
