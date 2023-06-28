@@ -2,12 +2,14 @@
   --background-color: #fafafa;
   --color: black;
   --border: 1px;
+  --footer-text:rgb(182, 177, 177);
 }
 
 :root[data-theme="dark"] {
   --background-color: #171f26;
   --color: #ffffff;
   --border: 2px;
+  --footer-text: rgb(114, 108, 108);
 }
 
 html {

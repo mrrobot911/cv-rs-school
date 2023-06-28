@@ -26,6 +26,7 @@ nav {
     border: var(--border) solid gainsboro;
     border-radius: 30px;
     cursor: pointer;
+    transition:0.4s;
 }
 .nav__container p:hover {
     font-weight: bold;
