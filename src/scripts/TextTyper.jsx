@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-const TextTyper = function ({
+const TextTyper = ({
     // eslint-disable-next-line react/prop-types
     text = "", interval = 100, Markup = "span"
-}) {
+}) => {
     const [typedText, setTypedText] = useState("");
     const typingRender = (text, updater, interval) => {
         let localTypingIndex = 0;

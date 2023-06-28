@@ -1,5 +1,41 @@
+nav {
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
 .nav__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 10px;
+    font-style: italic;
+    font-size: 1.3rem;
+    
+}
+.navLink__container {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__container p {
+    padding: 10px 20px;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.nav__container p:hover {
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px gainsboro;
+}
+.internacionalization__container {
+    display: flex;
+    flex-direction: row;
+}
+.internacionalization__container p {
+    padding: 0px 20px;
 }

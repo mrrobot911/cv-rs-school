@@ -1,7 +1,7 @@
 
 const Content = () => {
   return (
-    <div>Content</div>
+    <div className="content__container">Content</div>
   )
 }
 
