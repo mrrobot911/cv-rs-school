@@ -16,6 +16,26 @@
     text-align: center;
     font-style: italic;
 }
+.lineUp {
+    animation: 2s anim-lineUp;
+  }
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
 .hero__code {
     padding: 40px;
     font-family: Roboto;
@@ -31,7 +51,7 @@
     justify-content: center;
     height: 250px;
     width: 200px;
-  }
+}
   
 .circle {
     height: 200px;

@@ -8,7 +8,7 @@ const Hero = () => {
           <div className="wrap">
             <img className="circle"/>
           </div>
-          <h1>Hi, my name KelWin!</h1>
+          <h1 className="lineUp">Hi, my name KelWin!</h1>
         </div>
         <div className="hero__container hero__code">
           <TextTyper text={textToRender[0]} interval={50} Markup={"p"}/>
