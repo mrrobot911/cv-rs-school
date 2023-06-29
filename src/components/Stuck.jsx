@@ -41,7 +41,7 @@ function Stuck() {
     if (autoPlay === false) return;
     const interval = setInterval(() => {
       numberNext();
-    }, 3000);
+    }, 5000);
     return () => {
       clearInterval(interval);
     };
@@ -58,7 +58,7 @@ function Stuck() {
   }
 
   return (
-    <div className="stuck__container">
+    <div id="stuck" className="stuck__container">
       <h2>Stuck:</h2>
       <div className="slider__container">
         <button onClick={()=>numberPrev()}><img className="buttonArrow"src="src/assets/arrow-circle-left.svg"/></button>

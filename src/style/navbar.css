@@ -21,14 +21,14 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.nav__container p {
+.nav__container a {
     padding: 10px 20px;
     border: var(--border) solid gainsboro;
     border-radius: 30px;
     cursor: pointer;
     transition:0.4s;
 }
-.nav__container p:hover {
+.nav__container a:hover {
     font-weight: bold;
     font-size: 1.5rem;
     box-shadow: 2px 2px gainsboro;
@@ -39,7 +39,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.theme__container p {
+.theme__container a {
     margin-bottom: 10px;
     font-style: italic;
 }

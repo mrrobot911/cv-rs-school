@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <div>
+    <div id="skills">
         <h2>Languages:</h2>
     </div>
   )

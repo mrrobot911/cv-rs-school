@@ -1,6 +1,9 @@
 function Progects() {
   return (
-    <div>Progects</div>
+    <div id="projects">
+      <h2>Progects:</h2>
+
+    </div>
   )
 }
 

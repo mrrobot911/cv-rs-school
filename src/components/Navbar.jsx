@@ -13,16 +13,16 @@ const Navbar = () => {
     <nav>
       <div className="nav__container">
         <div className="navLink__container">
-          <p>About me</p>
+          <a href="#about">About me</a>
         </div>
         <div className="navLink__container">
-          <p>My Stuck</p>
+          <a href="#stuck">My Stuck</a>
         </div>
         <div className="navLink__container">
-          <p>My projects</p>
+          <a href="#projects">My projects</a>
         </div>
         <div className="navLink__container">
-          <p>Scills</p>
+          <a href="#skills">Skills</a>
         </div>
       </div>
       <div className="theme__container">
