@@ -1,6 +1,8 @@
 function Stuck() {
   return (
-    <div>Stuck</div>
+    <div>
+      <h2>Stuck:</h2>
+    </div>
   )
 }
 
