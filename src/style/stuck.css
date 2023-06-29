@@ -1,0 +1,33 @@
+.stuck__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__container{
+    display: flex;
+    height: 360px;
+    width: auto;
+    gap: 40px;
+}
+.buttonArrow {
+    height: 80px;
+    background-color: var(--arrow);
+    border-radius: 50%;
+}
+.pictures__container {
+    display: flex;
+    align-items: center;
+
+}
+.pictures__container img{
+    height: 265px;
+}
+.pictures__container p{
+    visibility: hidden;
+    text-align: center;
+    font-family: Roboto;
+}
+
+
+
+

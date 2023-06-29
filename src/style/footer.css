@@ -47,6 +47,10 @@
     display:inline-block;
     margin:0px 30px;
 }
+.rss {
+    height: 25px;
+    width: auto;
+}
 
 @media (max-width:720px){
 .footer__container{

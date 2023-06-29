@@ -3,6 +3,7 @@
   --color: black;
   --border: 1px;
   --footer-text:rgb(182, 177, 177);
+  --arrow:inherit;
 }
 
 :root[data-theme="dark"] {
@@ -10,6 +11,7 @@
   --color: #ffffff;
   --border: 2px;
   --footer-text: rgb(114, 108, 108);
+  --arrow: greenyellow;
 }
 
 html {
