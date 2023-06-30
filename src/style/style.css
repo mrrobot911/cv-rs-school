@@ -4,14 +4,16 @@
   --border: 1px;
   --footer-text:rgb(182, 177, 177);
   --arrow:inherit;
+  --footer-background-color:black;
 }
 
 :root[data-theme="dark"] {
   --background-color: #171f26;
   --color: #ffffff;
   --border: 2px;
-  --footer-text: rgb(114, 108, 108);
+  --footer-text: rgb(203, 193, 193);
   --arrow: greenyellow;
+  --footer-background-color: rgb(48, 51, 58);
 }
 
 html {

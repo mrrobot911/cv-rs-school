@@ -15,7 +15,7 @@ nav {
     
 }
 .navLink__container {
-    width: 180px;
+    width: 220px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -38,6 +38,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 150px;
+    text-align: center;
 }
 .theme__container p {
     margin-bottom: 10px;
@@ -47,7 +49,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80px;
+    width: 120px;
 }
 .internacionalization__container input {
     padding: 0px 20px;

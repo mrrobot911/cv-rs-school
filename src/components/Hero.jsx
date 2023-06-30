@@ -1,5 +1,8 @@
+import useMyContext from "../hooks/useMyContext";
+import { locale } from "../utils/Context";
 
 const Hero = () => {
+  const { context } = useMyContext();
   const textToRender = `
   document.querySelector('#loan-form').addEventListener('submit', function(e){
       document.querySelector('#results').style.display = 'none';
@@ -66,12 +69,10 @@ const Hero = () => {
           <div className="wrap">
             <img className="circle"/>
           </div>
-          <h1 className="lineUp">Hi, my name KelWin!</h1>
+          <h1 className="lineUp">{locale[context.local]["h1"]}</h1>
           <div>
-            <h2>Contact information:</h2>
+            <h2>{locale[context.local]["contact"]}</h2>
             <div className="hero__contacts">
-              {/* <img className="contactImg" src="/src/assets/phone.png"/>
-              <img className="contactImg" src="/src/assets/telegram.png"/> */}
               
             </div>
           </div>

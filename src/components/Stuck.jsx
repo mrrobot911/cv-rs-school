@@ -54,7 +54,7 @@ function Stuck() {
   }
   const outFocus = (e) => {
     setAutoplay(true);
-    e.target.style.height = '260px'
+    e.target.style.height = ''
   }
 
   return (
