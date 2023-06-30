@@ -1,0 +1,35 @@
+#skills h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    transition: .2s ease-in-out;
+    width: 800px;
+    margin-bottom: 20px;
+}
+.skills__container p {
+    line-height: 1.6;
+    font-family: Roboto;
+}
+.skills__head {
+    display: flex;
+    margin: 15px 0px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.skills__head span {
+    width: 18px;
+    height: 18px;
+    border-top: 3px solid var(--color);
+    border-right: 3px solid var(--color);
+    margin-right: 20px;
+    transition:0.4s;
+}
+.rotate__up {
+    transform: rotate(-45deg);
+}
+.rotate__down {
+    transform: rotate(135deg);
+}
