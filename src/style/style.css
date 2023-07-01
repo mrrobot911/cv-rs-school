@@ -6,6 +6,7 @@
   --arrow:inherit;
   --footer-background-color:black;
   --contacts: gainsboro;
+  --stuck-text:rgba(0, 0, 0, 0.05);
 }
 
 :root[data-theme="dark"] {
@@ -16,6 +17,7 @@
   --arrow: greenyellow;
   --footer-background-color: rgb(48, 51, 58);
   --contacts: rgb(107, 105, 105);
+  --stuck-text:rgba(252, 249, 249, 0.321);
 }
 
 html {

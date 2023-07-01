@@ -1,7 +1,11 @@
+import useMyContext from "../hooks/useMyContext";
+import { locale } from "../utils/Context";
+
 function Progects() {
+  const { context } = useMyContext();
   return (
     <div id="projects">
-      <h2>Progects:</h2>
+      <h2>{locale[context.local]["project"]} :</h2>
 
     </div>
   )

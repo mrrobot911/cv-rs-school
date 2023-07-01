@@ -44,12 +44,23 @@
     margin-top: 10px;
     padding: 0px 10px;
 }
+.contacts__head {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .hero__contacts li {
     display: flex;
     justify-content: space-between;
     background-color: var(--contacts);
     padding: 10px;
     border-radius: 15px;
+}
+.hero__contacts button {
+    margin-left: 90px;
+}
+.hero__contacts button:hover{
+    color: red;
+    transition: 0.5s;
 }
 .alert__copy {
     position: absolute;

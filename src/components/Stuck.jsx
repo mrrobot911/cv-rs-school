@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
+import useMyContext from "../hooks/useMyContext";
+import { locale } from "../utils/Context";
 
 function Stuck() {
+  const { context } = useMyContext();
   const pictureState = [
     ["./src/assets/gallery/css3.png", "css3"],
     ["./src/assets/gallery/html5.png", "html5"],
@@ -59,7 +62,7 @@ function Stuck() {
 
   return (
     <div id="stuck" className="stuck__container">
-      <h2>Stuck:</h2>
+      <h2>{locale[context.local]["stuck"]} :</h2>
       <div className="slider__container">
         <button onClick={()=>numberPrev()}><img className="buttonArrow"src="src/assets/arrow-circle-left.svg"/></button>
           <div className="pictures__container">

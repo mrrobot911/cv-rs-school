@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0px;
 }
 .slider__container{
     display: flex;
@@ -28,6 +28,9 @@
     visibility: hidden;
     text-align: center;
     font-family: Roboto;
+    padding: 10px 0px;
+    border: 2px solid var(--stuck-text);
+    border-radius: 20px;
 }
 
 

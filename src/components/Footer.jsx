@@ -1,5 +1,8 @@
+import useMyContext from "../hooks/useMyContext";
+import { locale } from "../utils/Context";
 
 const Footer = () => {
+  const { context } = useMyContext();
   const openInNewTab = url => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -16,16 +19,16 @@ const Footer = () => {
 
     <div className="row">
       <ul>
-        <li><a href="#">Contact me</a></li>
-        <li><a href="https://github.com/mrrobot911" target="_blank" rel="noopener noreferrer">My Services</a></li>
-        <li><a href="https://www.privacypolicies.com/"target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
-        <li><a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
-        <li><a href="#">My career</a></li>
+        <li><a href="#">{locale[context.local]["contact-fut"]}</a></li>
+        <li><a href="https://github.com/mrrobot911" target="_blank" rel="noopener noreferrer">{locale[context.local]["services"]}</a></li>
+        <li><a href="https://www.privacypolicies.com/"target="_blank" rel="noopener noreferrer">{locale[context.local]["privacy"]}</a></li>
+        <li><a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">{locale[context.local]["terms"]}</a></li>
+        <li><a href="#">{locale[context.local]["career"]}</a></li>
       </ul>
     </div>
 
     <div className="row">
-      Copyright © 2023 || Designed By: KelWin
+      {locale[context.local]["copy"]}
     </div>
   </div>
 </footer>

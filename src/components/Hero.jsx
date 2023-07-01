@@ -85,12 +85,12 @@ const Hero = () => {
         </div>
         <h1 className="lineUp">{locale[context.local]["h1"]}</h1>
         <div>
-          <h2>{locale[context.local]["contact"]}</h2>
+          <h2 className="contacts__head">{locale[context.local]["contact"]}</h2>
           <ul className="hero__contacts">
-            <li><p>E-mail</p><button value={text1} onClick={(e)=>copyLink(e)}>{text1}</button></li>
-            <li><p>Telegram</p><button value={text2} onClick={(e)=>copyLink(e)}>{text2}</button></li>
-            <li><p>Github</p><button value={text3} onClick={(e)=>copyLink(e)}>{text3}</button></li>
-            <li><p>Discord</p><button value={text4} onClick={(e)=>copyLink(e)}>{text4}</button></li>
+            <li><p>E-mail:</p><button value={text1} onClick={(e)=>copyLink(e)}>{text1}</button></li>
+            <li><p>Telegram:</p><button value={text2} onClick={(e)=>copyLink(e)}>{text2}</button></li>
+            <li><p>Github:</p><button value={text3} onClick={(e)=>copyLink(e)}>{text3}</button></li>
+            <li><p>Discord:</p><button value={text4} onClick={(e)=>copyLink(e)}>{text4}</button></li>
             {show && <p className="alert__copy">{locale[context.local]["alert"]}</p>}
           </ul>
         </div>
