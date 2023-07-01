@@ -1,5 +1,77 @@
+nav {
+    height: 120px;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
 .nav__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 10px;
+    font-style: italic;
+    font-size: 1.3rem;
+    
+}
+.navLink__container {
+    width: 220px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__container a {
+    padding: 10px 20px;
+    border: var(--border) solid gainsboro;
+    border-radius: 30px;
+    cursor: pointer;
+    transition:0.4s;
+}
+.nav__container a:hover {
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px gainsboro;
+}
+.theme__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+.theme__container p {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.internacionalization__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+}
+.internacionalization__btn {
+    display: flex;
+    width: 70px;
+}
+.internacionalization__container input {
+    visibility: hidden;
+}
+.internacionalization__container label {
+    /* padding: 0px 20px; */
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 10px;
+    border: var(--border) solid gainsboro;
+    border-radius: 50%;    
+}
+.internacionalization__container label:hover{
+    font-size: 1.4rem;
+}
+.activated {
+    color:greenyellow;
+    -webkit-text-stroke: 1px rgb(192, 187, 187);
 }

@@ -1,0 +1,38 @@
+.stuck__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+}
+.slider__container{
+    display: flex;
+    width: auto;
+    gap: 40px;
+    height: 280px;
+    margin-bottom: 25px;
+}
+.buttonArrow {
+    height: 60px;
+    background-color: var(--arrow);
+    border-radius: 50%;
+}
+.pictures__container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+}
+.pictures__container img{
+    height: 200px;
+}
+.pictures__container p{
+    visibility: hidden;
+    text-align: center;
+    font-family: Roboto;
+    padding: 10px 0px;
+    border: 2px solid var(--stuck-text);
+    border-radius: 20px;
+}
+
+
+
+
