@@ -6,17 +6,17 @@ import { locale } from "../utils/Context";
 function Stuck() {
   const { context } = useMyContext();
   const pictureState = [
-    ["./src/images/gallery/css3.png", "css3"],
-    ["./src/images/gallery/html5.png", "html5"],
-    ["./src/images/gallery/js.png", "js"],
-    ["./src/images/gallery/reactjs.png", "reactjs"],
-    ["./src/images/gallery/typescript.png", "typescript"],
-    ["./src/images/gallery/redux.png", "redux"],
-    ["./src/images/gallery/tailwind.png", "tailwind"],
-    ["./src/images/gallery/git.png", "git"],
-    ["./src/images/gallery/vitejs.png", "vitejs"],
-    ["./src/images/gallery/nodejs.png", "nodejs"],
-    ["./src/images/gallery/nextjs.png", "nextjs"],
+    ["src/images/gallery/css3.png", "css3"],
+    ["src/images/gallery/html5.png", "html5"],
+    ["src/images/gallery/js.png", "js"],
+    ["src/images/gallery/reactjs.png", "reactjs"],
+    ["src/images/gallery/typescript.png", "typescript"],
+    ["src/images/gallery/redux.png", "redux"],
+    ["src/images/gallery/tailwind.png", "tailwind"],
+    ["src/images/gallery/git.png", "git"],
+    ["src/images/gallery/vitejs.png", "vitejs"],
+    ["src/images/gallery/nodejs.png", "nodejs"],
+    ["src/images/gallery/nextjs.png", "nextjs"],
   ];
   const [ number, setNumber ] = useState(5);
   const [ picture, setPicture ] = useState(pictureState.slice(0,5));
