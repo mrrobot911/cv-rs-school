@@ -101,7 +101,7 @@
     border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
     overflow: hidden;
     animation: morph 15s linear infinite;
-    background-image: url('./src/assets/user.jpg');
+    background-image: url('./src/images/user.jpg');
     background-repeat: no-repeat;
     background-size: 150px;
     background-position: center;
