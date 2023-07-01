@@ -1,4 +1,5 @@
 nav {
+    height: 120px;
     padding: 15px 50px;
     display: flex;
     flex-direction: row;

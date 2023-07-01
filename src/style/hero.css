@@ -57,6 +57,7 @@
 }
 .hero__contacts button {
     margin-left: 90px;
+    transition: 0.5s;
 }
 .hero__contacts button:hover{
     color: red;
@@ -132,4 +133,27 @@
 .text__color {
     color: brown;
 }
-  
+.codePurple {
+    color: brown;
+}
+.codeFiol {
+    color: rgb(161, 82, 235);
+}
+.codeYellow {
+    color: rgb(200, 200, 30);
+}
+.codeGreen {
+    color: rgb(122, 189, 20);
+}
+.codeGrey {
+    color:grey;
+}
+.hero__code button {
+    position: absolute;
+    top: 75%;
+    right: 22%;
+    padding: 10px 20px;
+    border: 2px solid rgba(176, 173, 173, 0.777);
+    box-shadow: 4px 4px rgba(128, 128, 128, 0.69);
+    border-radius: 15px;
+}

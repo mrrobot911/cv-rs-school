@@ -9,69 +9,17 @@ const Hero = () => {
   const text4 = 'kelwin911';
   const { context } = useMyContext();
   const [ show, setShow ] = useState(false);
+  const [ showBtn, setShowBtn ] = useState(false);
 
-  const textToRender = `
-  document.querySelector('#loan-form').addEventListener('submit', function(e){
-      document.querySelector('#results').style.display = 'none';
-      document.querySelector('#loading').style.display = 'block';
-  
-      setTimeout(calculateResults, 2000);
-  
-      e.preventDefault();
-  });
-  
-  // Calculate the results
-  function calculateResults(){
-
-      const amount = document.getElementById('amount');
-      const interest = document.getElementById('interest');
-      const years = document.getElementById('years');
-      const monthlyPayment = document.getElementById('monthly-payment');
-      const totalPayment = document.getElementById('total-payment');
-      const totalInterest = document.getElementById('total-interest');
-  
-      const principle = parseFloat(amount.value);
-      const calculatedInterest = parseFloat(interest.value) / 100 / 12;
-      const calculatedPayments = parseFloat(years.value) * 12;
-      
-      const x = Math.pow(1 + calculatedInterest, calculatedPayments);
-      const monthly = (principle * x * calculatedInterest) / (x - 1);
-  
-      if(isFinite(monthly)){
-          monthlyPayment.value = monthly.toFixed(2);
-          totalPayment.value = (monthly * calculatedPayments).toFixed(2);
-          totalInterest.value = ((monthly * calculatedPayments) - principle).toFixed(2);
-  
-          document.querySelector('#results').style.display = 'block';
-          document.querySelector('#loading').style.display = 'none';
-      } else {
-          showError('Please check your inputs');
-      }
-  }
-  
-  function showError(error){
-      document.querySelector('#results').style.display = 'none';
-      document.querySelector('#loading').style.display = 'none';
-  
-      const errorDiv = document.createElement('div');
-  
-      const card = document.querySelector('.card');
-      const heading = document.querySelector('.heading');
-  
-      errorDiv.className = 'alert alert-danger';
-      
-      errorDiv.appendChild(document.createTextNode(error));
-  
-      card.insertBefore(errorDiv, heading);
-  
-      setTimeout(clearError, 4000);
-  }
-  
-  function clearError(){
-      document.querySelector('.alert').remove();
-  }`
   const copyLink =(e) =>{
     navigator.clipboard.writeText(e.target.value);
+    setShow(true);
+    setTimeout(() => {
+      setShow(false);
+       }, 1000);
+  }
+  const copyCode = (e) =>{
+    navigator.clipboard.writeText(e.target.parentElement.textContent);
     setShow(true);
     setTimeout(() => {
       setShow(false);
@@ -95,8 +43,32 @@ const Hero = () => {
           </ul>
         </div>
       </div>
-      <div className="hero__container hero__code">
-        <p>{textToRender}</p>
+      <div className="hero__container hero__code" onMouseEnter={()=>setShowBtn(!showBtn)} onMouseLeave={()=>setShowBtn(!showBtn)}>
+        <p><span className="codePurple">const</span> <span className="codeFiol">car1</span> = &#123;</p>
+        <p>&#160;&#160;&#160;&#160;maker: <span className="codeYellow">&apos; Ford &apos;</span>,</p>
+        <p>&#160;&#160;&#160;&#160;model: <span className="codeYellow">&apos; Fiesta &apos;</span>,</p>
+        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span className="codeGreen">drive</span> <span className="codePurple">&#40;&#41; &#123;</span></p>
+        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span className="codePurple">console</span>.<span className="codeGreen">log</span> &#40;<span className="codeYellow">&#96;Driving a</span> $&#123;<span className="codeFiol">this</span>.maker&#125; $&#123;<span className="codeFiol">this</span>.model&#125; <span className="codeYellow">car!&#96;</span>&#41;&#59;</p>
+        <p>&#160;&#160;&#160;&#160;<span className="codePurple">&#125;</span></p>
+        <p>&#125;</p>
+        <p><span className="codePurple">const</span> <span className="codeFiol">anotherCar</span> = &#123;</p>
+        <p>&#160;&#160;&#160;&#160;maker: <span className="codeYellow">&apos; Audi &apos;</span>,</p>
+        <p>&#160;&#160;&#160;&#160;model: <span className="codeYellow">&apos; A4 &apos;</span></p>
+        <p>&#125;</p>
+        <p><span className="codeFiol">car1</span>.<span className="codeGreen">drive</span>.<span className="codeGreen">bind</span>&#40;<span className="codeFiol">anotherCar</span>&#41;&#40;&#41;</p>
+        <p><span className="codeGrey">&#47;&#47;Driving a Audi A4 car!</span></p>
+        <p><span className="codePurple">const</span> <span className="codeFiol">car2</span> = &#123;</p>
+        <p>&#160;&#160;&#160;&#160;maker: <span className="codeYellow">&apos; Ford &apos;</span>,</p>
+        <p>&#160;&#160;&#160;&#160;model: <span className="codeYellow">&apos; Fiesta &apos;</span>,</p>
+        <p>&#125;</p>
+        <p><span className="codePurple">const</span> <span className="codeGreen">drive</span> = <span className="codePurple">function</span>&#40;kmh&#41; &#123;</p>
+        <p>&#160;&#160;&#160;&#160;<span className="codePurple">console</span>.<span className="codeGreen">log</span>&#40; <span className="codeYellow">&#96;Driving a</span> $&#123;<span className="codeFiol">this</span>.maker&#125; $&#123;<span className="codeFiol">this</span>.model&#125; <span className="codeYellow">car at</span> $&#123;kmh&#125; <span className="codeYellow">km/h!&#96;</span>&#41;</p>
+        <p>&#125;</p>
+        <p><span className="codeGreen">drive</span>.<span className="codeGreen">call</span>&#40;<span className="codeFiol">car2</span>, <span className="codeFiol">100</span>&#41;</p>
+        <p><span className="codeGrey">&#47;&#47;Driving a Ford Fiesta car at 100 km/h!</span></p>
+        <p><span className="codeGreen">drive</span>.<span className="codeGreen">apply</span>&#40;<span className="codeFiol">car2</span>, [<span className="codeFiol">100</span>]&#41;</p>
+        <p><span className="codeGrey">&#47;&#47;Driving a Ford Fiesta car at 100 km/h!</span></p>
+        {showBtn && <button onClick={(e)=>copyCode(e)}>{locale[context.local]["codecopy"]}</button>}
       </div>
     </section>
   )

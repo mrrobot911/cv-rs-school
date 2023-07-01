@@ -29,7 +29,7 @@ function About() {
               <img className="show__image" src="./src/assets/about.jpg" />
             </div>
           : 
-            <img className="hide__image" src="./src/assets/about.jpg" onClick={setFlag}/>
+            <img className="hide__image" src="./src/assets/about.jpg" alt={locale[context.local]["alt"]} onClick={setFlag}/>
 }
         </div>
 
