@@ -7,6 +7,7 @@
   --footer-background-color:black;
   --contacts: gainsboro;
   --stuck-text:rgba(0, 0, 0, 0.05);
+  --image-hight: 300px;
 }
 
 :root[data-theme="dark"] {
@@ -18,8 +19,8 @@
   --footer-background-color: rgb(48, 51, 58);
   --contacts: rgb(107, 105, 105);
   --stuck-text:rgba(252, 249, 249, 0.321);
+  --image-hight: 300px;
 }
-
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;

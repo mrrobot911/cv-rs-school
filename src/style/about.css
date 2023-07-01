@@ -7,8 +7,9 @@
 }
 .about__text{
     text-align: justify;
-    width: 600px;
+    max-width: 600px;
     line-height: 1.5;
+    margin-left: 20px;
 }
 .about__text p {
     margin-bottom: 2%;
@@ -50,10 +51,15 @@
     border-radius: 30px;
     cursor: zoom-in;
 }
-  .show__image {
+.show__image {
     width: 90vw;
     height: 90vh;
     object-fit: contain;
-    cursor: zoom-out;
-    
+    cursor: zoom-out; 
+}
+  @media (max-width: 1200px) {
+    .hide__image {
+        margin: 20px;
+        height: 300px;
+    }
   }

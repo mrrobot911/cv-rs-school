@@ -16,7 +16,6 @@ const Toggle = ({ isOn, handleToggle, onChange }) => (
       htmlFor={`react-switch-new`}
     >
       <span className={`react-switch-button`} />
-      {/* <span>&#9728;</span> */}
     </label>
   </>
 )
