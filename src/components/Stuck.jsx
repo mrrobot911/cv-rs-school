@@ -53,7 +53,7 @@ function Stuck() {
 
   const onfocus = (e) => {
     setAutoplay(false);
-    e.target.style.height = '300px'
+    e.target.style.height = 'var(--image-hight)'
   }
   const outFocus = (e) => {
     setAutoplay(true);
