@@ -84,7 +84,7 @@
     min-width: 300px;
     border: 2px solid rgba(176, 173, 173, 0.777);
     box-shadow: 4px 4px rgba(128, 128, 128, 0.69);
-    overflow: scroll;
+    overflow: hidden;
 }
 .wrap {
     display: flex;
@@ -149,9 +149,11 @@
     color:grey;
 }
 .hero__code button {
-    position: absolute;
-    top: 75%;
-    right: 22%;
+    position:relative; 
+    left:280px; 
+    top:15px;
+    z-index: 3;
+    overflow: hidden;
     padding: 10px 20px;
     border: 2px solid rgba(176, 173, 173, 0.777);
     box-shadow: 4px 4px rgba(128, 128, 128, 0.69);
