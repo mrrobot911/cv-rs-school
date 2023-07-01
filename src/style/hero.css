@@ -150,7 +150,7 @@
 }
 .hero__code button {
     position:relative; 
-    left:280px; 
+    left:120px; 
     top:15px;
     z-index: 3;
     overflow: hidden;
