@@ -7,14 +7,14 @@ const Footer = () => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
   return (
-<footer>
+<footer>    
   <div className="footer__container">
     <div className="row img__row">
-      <img src="./src/assets/Facebook.png" onClick={() => openInNewTab('https/facebook.com/')}></img>
-      <img src="./src/assets/Instagram.png" onClick={() => openInNewTab('https://instagram.com')}></img>
-      <img src="./src/assets/Github.png" onClick={() => openInNewTab('https://github.com/mrrobot911')}></img>
-      <img src="./src/assets/Twitter.png" onClick={() => openInNewTab('https/twitter.com/')}></img>
-      <img className="rss" src="./src/assets/rss.svg" onClick={() => openInNewTab('https://rs.school/')}></img>
+      <img src="./src/images/Facebook.png" onClick={() => openInNewTab('https/facebook.com/')}></img>
+      <img src="./src/images/Instagram.png" onClick={() => openInNewTab('https://instagram.com')}></img>
+      <img src="./src/images/Github.png" onClick={() => openInNewTab('https://github.com/mrrobot911')}></img>
+      <img src="./src/images/Twitter.png" onClick={() => openInNewTab('https/twitter.com/')}></img>
+      <img className="rss" src="./src/images/rss.svg" onClick={() => openInNewTab('https://rs.school/')}></img>
     </div>
 
     <div className="row">
