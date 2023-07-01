@@ -17,7 +17,7 @@ const Scroll = () => {
         <>
             {isVisible &&
             <a className="scroll__btn" style={{display: isVisible ? 'block':'none'}} href="#">
-                <img src="./src/assets/arrow-circle-left.svg"/>
+                <img src="src/images/arrow-circle-left.svg"/>
             </a>
             }
         </>

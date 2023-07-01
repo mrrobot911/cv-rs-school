@@ -26,10 +26,10 @@ function About() {
           {click 
           ? 
             <div onClick={unsetFlag} className="lightbox show">
-              <img className="show__image" src="./src/assets/about.jpg" />
+              <img className="show__image" src="src/images/about.jpg" />
             </div>
           : 
-            <img className="hide__image" src="./src/assets/about.jpg" alt={locale[context.local]["alt"]} onClick={setFlag}/>
+            <img className="hide__image" src="src/images/about.jpg" alt={locale[context.local]["alt"]} onClick={setFlag}/>
 }
         </div>
 
