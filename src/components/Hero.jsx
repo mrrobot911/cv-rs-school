@@ -1,8 +1,15 @@
+import { useState } from "react";
 import useMyContext from "../hooks/useMyContext";
 import { locale } from "../utils/Context";
 
 const Hero = () => {
+  const text1 = 'kelwin2705@gmail.com';
+  const text2 = '@kelwin27';
+  const text3 = 'github.com/mrrobot911';
+  const text4 = 'kelwin911';
   const { context } = useMyContext();
+  const [ show, setShow ] = useState(false);
+
   const textToRender = `
   document.querySelector('#loan-form').addEventListener('submit', function(e){
       document.querySelector('#results').style.display = 'none';
@@ -63,23 +70,34 @@ const Hero = () => {
   function clearError(){
       document.querySelector('.alert').remove();
   }`
+  const copyLink =(e) =>{
+    navigator.clipboard.writeText(e.target.value);
+    setShow(true);
+    setTimeout(() => {
+      setShow(false);
+       }, 1000);
+  }
   return (
     <section className="hero__section">
-        <div className="hero__container">
-          <div className="wrap">
-            <img className="circle"/>
-          </div>
-          <h1 className="lineUp">{locale[context.local]["h1"]}</h1>
-          <div>
-            <h2>{locale[context.local]["contact"]}</h2>
-            <div className="hero__contacts">
-              
-            </div>
-          </div>
+      <div className="hero__container">
+        <div className="wrap">
+          <img className="circle"/>
         </div>
-        <div className="hero__container hero__code">
-          <p>{textToRender}</p>
+        <h1 className="lineUp">{locale[context.local]["h1"]}</h1>
+        <div>
+          <h2>{locale[context.local]["contact"]}</h2>
+          <ul className="hero__contacts">
+            <li><p>E-mail</p><button value={text1} onClick={(e)=>copyLink(e)}>{text1}</button></li>
+            <li><p>Telegram</p><button value={text2} onClick={(e)=>copyLink(e)}>{text2}</button></li>
+            <li><p>Github</p><button value={text3} onClick={(e)=>copyLink(e)}>{text3}</button></li>
+            <li><p>Discord</p><button value={text4} onClick={(e)=>copyLink(e)}>{text4}</button></li>
+            {show && <p className="alert__copy">{locale[context.local]["alert"]}</p>}
+          </ul>
         </div>
+      </div>
+      <div className="hero__container hero__code">
+        <p>{textToRender}</p>
+      </div>
     </section>
   )
 }

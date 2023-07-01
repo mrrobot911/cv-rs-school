@@ -49,7 +49,7 @@ const Navbar = () => {
       <Context.Consumer>
       {({ setContext }) => (
         <>
-          <div>
+          <div className="internacionalization__btn">
             <label 
               htmlFor="btnChek1" 
               onClick={()=>{setValue(1); setContext(prev =>{return{...prev, local:'en'}})}}
@@ -63,7 +63,7 @@ const Navbar = () => {
               onChange={chengeValue}
             />
           </div>
-          <div>
+          <div className="internacionalization__btn">
             <label 
               htmlFor="btnChek2" 
               onClick={()=>{setValue(2); setContext(prev =>{return{...prev, local:'ru'}})}}

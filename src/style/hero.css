@@ -39,7 +39,26 @@
 }
 .hero__contacts {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.hero__contacts li {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--contacts);
+    padding: 10px;
+    border-radius: 15px;
+}
+.alert__copy {
+    position: absolute;
+    right: 40%;
+    top: 65%;
+    padding: 20px;
+    background-color: var(--color);
+    color: var(--background-color);
+    border-radius: 30px;
 }
 .contactImg {
     width: 40px;

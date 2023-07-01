@@ -49,17 +49,23 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 120px;
+    width: 140px;
+}
+.internacionalization__btn {
+    display: flex;
+    width: 70px;
 }
 .internacionalization__container input {
-    padding: 0px 20px;
-    cursor: pointer;
     visibility: hidden;
 }
 .internacionalization__container label {
+    /* padding: 0px 20px; */
     font-weight: bold;
     font-size: 1.3rem;
     cursor: pointer;
+    padding: 10px;
+    border: var(--border) solid gainsboro;
+    border-radius: 50%;    
 }
 .internacionalization__container label:hover{
     font-size: 1.4rem;
