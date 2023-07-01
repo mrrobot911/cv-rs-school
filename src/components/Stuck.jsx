@@ -6,17 +6,17 @@ import { locale } from "../utils/Context";
 function Stuck() {
   const { context } = useMyContext();
   const pictureState = [
-    ["src/images/gallery/css3.png", "css3"],
-    ["src/images/gallery/html5.png", "html5"],
-    ["src/images/gallery/js.png", "js"],
-    ["src/images/gallery/reactjs.png", "reactjs"],
-    ["src/images/gallery/typescript.png", "typescript"],
-    ["src/images/gallery/redux.png", "redux"],
-    ["src/images/gallery/tailwind.png", "tailwind"],
-    ["src/images/gallery/git.png", "git"],
-    ["src/images/gallery/vitejs.png", "vitejs"],
-    ["src/images/gallery/nodejs.png", "nodejs"],
-    ["src/images/gallery/nextjs.png", "nextjs"],
+    ["/images/gallery/css3.png", "css3"],
+    ["/images/gallery/html5.png", "html5"],
+    ["/images/gallery/js.png", "js"],
+    ["/images/gallery/reactjs.png", "reactjs"],
+    ["/images/gallery/typescript.png", "typescript"],
+    ["/images/gallery/redux.png", "redux"],
+    ["/images/gallery/tailwind.png", "tailwind"],
+    ["/images/gallery/git.png", "git"],
+    ["/images/gallery/vitejs.png", "vitejs"],
+    ["/images/gallery/nodejs.png", "nodejs"],
+    ["/images/gallery/nextjs.png", "nextjs"],
   ];
   const [ number, setNumber ] = useState(5);
   const [ picture, setPicture ] = useState(pictureState.slice(0,5));
@@ -64,7 +64,7 @@ function Stuck() {
     <div id="stuck" className="stuck__container">
       <h2>{locale[context.local]["stuck"]} :</h2>
       <div className="slider__container">
-        <button onClick={()=>numberPrev()}><img className="buttonArrow"src="src/images/arrow-circle-left.svg"/></button>
+        <button onClick={()=>numberPrev()}><img className="buttonArrow"src="/images/arrow-circle-left.svg"/></button>
           <div className="pictures__container">
             {picture.map(el=><div 
                 key={nanoid()} 
@@ -79,7 +79,7 @@ function Stuck() {
               <p>{el[1]}</p>
             </div>)}
           </div>
-        <button onClick={()=>numberNext()}><img className="buttonArrow"src="src/images/arrow-circle-right.svg"/></button>
+        <button onClick={()=>numberNext()}><img className="buttonArrow"src="/images/arrow-circle-right.svg"/></button>
       </div>
     </div>
   )
