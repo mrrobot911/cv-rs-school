@@ -18,9 +18,27 @@ function Stuck() {
     ["/images/gallery/nodejs.png", "nodejs"],
     ["/images/gallery/nextjs.png", "nextjs"],
   ];
-  const [ number, setNumber ] = useState(5);
-  const [ picture, setPicture ] = useState(pictureState.slice(0,5));
+  const [ itemNum, setItemNum ] = useState(window.innerWidth <=768?3:5);
+  const [ number, setNumber ] = useState(itemNum);
+  const [ picture, setPicture ] = useState(pictureState.slice(0,itemNum));
   const [ autoPlay, setAutoplay ] = useState(true);
+
+  useEffect(() => {
+    const handleResize = (event) => {
+      if(event.target.innerWidth <=768){
+        setItemNum(3);
+        setPicture(pictureState.slice(0,3))
+      } else{
+        setItemNum(5);
+        setPicture(pictureState.slice(0,5))
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function numberPrev() {
     if (number -1>= 0) {
@@ -28,7 +46,7 @@ function Stuck() {
     } else {
       setNumber(pictureState.length - 1);
     }
-    setPicture(pre=>[pictureState[number - 6 >= 0 ? number - 6 : pictureState.length - Math.abs(number - 6)],...pre.slice(0,4)]);
+    setPicture(pre=>[pictureState[number - (itemNum + 1) >= 0 ? number - (itemNum + 1) : pictureState.length - Math.abs(number - (itemNum + 1))],...pre.slice(0,(itemNum - 1))]);
   }
 
   function numberNext() {
@@ -37,8 +55,9 @@ function Stuck() {
     } else {
       setNumber(0);
     }
-    setPicture(pre=>[...pre.slice(1,5),pictureState[number]]);
+    setPicture(pre=>[...pre.slice(1,itemNum),pictureState[number]]);
   }
+
   useEffect(() => {
 
     if (autoPlay === false) return;
