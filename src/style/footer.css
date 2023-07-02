@@ -61,7 +61,7 @@
         margin:0px 15px;
     }
 }
-@media (max-width:764px){
+@media (max-width:768px){
     .footer__container{
         text-align:left;
         padding:5%;
