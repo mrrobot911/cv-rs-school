@@ -40,5 +40,23 @@
     .skills__container {
         width: 600px;
     }
-
+}
+@media (max-width: 768px) {
+    .skills__container {
+        width: 400px;
+    }
+    .skills__container p {
+        font-size: 0.9rem;
+    }
+    .skills__container h3 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    .skills__head span {
+        width: 14px;
+        height: 14px;
+        border-top: 2px solid var(--color);
+        border-right: 2px solid var(--color);
+        margin-right: 15px;
+    }
 }

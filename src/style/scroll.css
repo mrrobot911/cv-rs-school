@@ -14,3 +14,13 @@
     transform: rotate(90deg);
     background-color: white;
 }
+@media (max-width: 1200px) {
+    .scroll__btn{
+        height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .scroll__btn{
+        height: 50px;
+    }
+}
