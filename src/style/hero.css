@@ -179,3 +179,10 @@
         flex-direction: column;
     }
 }
+@media (max-width: 480px) {
+    .hero__code {
+        padding: 50px 20px;
+        font-size: 0.8em;
+        margin-right: 15px;
+    }
+}
