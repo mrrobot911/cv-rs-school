@@ -142,7 +142,7 @@
     height: 460px;
     transform: translate(-60%,-30%);
 }
-.burger__container a{
+.burger__container li{
     margin: 5px 0px;
 }
 .burger__container a:hover{

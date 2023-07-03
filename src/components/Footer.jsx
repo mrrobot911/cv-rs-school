@@ -9,13 +9,13 @@ const Footer = () => {
   return (
 <footer>    
   <div className="footer__container">
-    <div className="row img__row">
-      <img src="/images/Facebook.png" onClick={() => openInNewTab('https/facebook.com/')}></img>
-      <img src="/images/Instagram.png" onClick={() => openInNewTab('https://instagram.com')}></img>
-      <img src="/images/Github.png" onClick={() => openInNewTab('https://github.com/mrrobot911')}></img>
-      <img src="/images/Twitter.png" onClick={() => openInNewTab('https/twitter.com/')}></img>
-      <img className="rss" src="/images/rss.svg" onClick={() => openInNewTab('https://rs.school/')}></img>
-    </div>
+    <ul className="row img__row">
+      <li><img src="/images/Facebook.png" onClick={() => openInNewTab('https/facebook.com/')}></img></li>
+      <li><img src="/images/Instagram.png" onClick={() => openInNewTab('https://instagram.com')}></img></li>
+      <li><img src="/images/Github.png" onClick={() => openInNewTab('https://github.com/mrrobot911')}></img></li>
+      <li><img src="/images/Twitter.png" onClick={() => openInNewTab('https/twitter.com/')}></img></li>
+      <li><img className="rss" src="/images/rss.svg" onClick={() => openInNewTab('https://rs.school/')}></img></li>
+    </ul>
 
     <div className="row">
       <ul>

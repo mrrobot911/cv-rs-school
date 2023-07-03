@@ -16,8 +16,10 @@
     align-items: center;
     justify-content: center;
 }
+.img__row li{
+    margin-right: 2.5%;
+}
 .img__row img{
-    margin-right: 2%;
     cursor: pointer;
     transition:0.5s;
 }
