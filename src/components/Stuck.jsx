@@ -72,6 +72,7 @@ function Stuck() {
 
   const onfocus = (e) => {
     setAutoplay(false);
+    e.target.style.transition = '0.6s'
     e.target.style.height = 'var(--image-hight)'
   }
   const outFocus = (e) => {
@@ -80,7 +81,7 @@ function Stuck() {
   }
 
   return (
-    <div id="stuck" className="stuck__container">
+    <section id="stuck" className="stuck__container">
       <h2>{locale[context.local]["stuck"]} :</h2>
       <div className="slider__container">
         <button onClick={()=>numberPrev()}><img className="buttonArrow"src="/images/arrow-circle-left.svg"/></button>
@@ -100,7 +101,7 @@ function Stuck() {
           </div>
         <button onClick={()=>numberNext()}><img className="buttonArrow"src="/images/arrow-circle-right.svg"/></button>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -7,14 +7,14 @@ import Stuck from "./Stuck.jsx"
 
 const Content = () => {
   return (
-    <div className="content__container">
+    <main className="content__container">
       <Hero />
       <About />
       <Stuck />
       <Projects />
       <Skills />
       <ScrollToTop />
-    </div>
+    </main>
   )
 }
 

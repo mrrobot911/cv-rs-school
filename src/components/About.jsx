@@ -15,7 +15,7 @@ function About() {
   }
 
   return (
-    <div id="about">
+    <section id="about">
         <h2>{locale[context.local]["briefly"]}</h2>
         <div className="about__container">
           <div className="about__text">
@@ -33,7 +33,7 @@ function About() {
 }
         </div>
 
-    </div>
+    </section>
   )
 }
 

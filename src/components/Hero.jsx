@@ -29,7 +29,9 @@ const Hero = () => {
     <section className="hero__section">
       <div className="hero__container">
         <div className="wrap">
-          <img className="circle"/>
+          <div className="circle" title={locale[context.local]["picture"]}>
+            <img src="/images/user.jpg" alt={locale[context.local]["picture"]}/>
+          </div>
         </div>
         <h1 className="lineUp">{locale[context.local]["h1"]}</h1>
         <div>

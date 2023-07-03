@@ -4,10 +4,10 @@ import { locale } from "../utils/Context";
 function Progects() {
   const { context } = useMyContext();
   return (
-    <div id="projects">
+    <section id="projects">
       <h2>{locale[context.local]["project"]} :</h2>
 
-    </div>
+    </section>
   )
 }
 
