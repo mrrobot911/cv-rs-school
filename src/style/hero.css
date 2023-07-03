@@ -106,6 +106,9 @@
     background-size: 150px;
     background-position: center;
 }
+.wrap img {
+    display: none;
+}
 
 @keyframes morph{
     0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }

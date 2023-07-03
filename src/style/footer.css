@@ -76,4 +76,12 @@
         margin:10px 0px;
         text-align:left;
     }
+    .img__row li{
+        margin-right: 4%;
+    }
+}
+@media (max-width:480px) {
+    .img__row li{
+        margin-right: 6%;
+    }
 }
