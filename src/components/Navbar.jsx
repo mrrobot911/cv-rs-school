@@ -41,30 +41,30 @@ const Navbar = () => {
           <div id="bar2" className="bar"></div>
           <div id="bar3" className="bar"></div>
         </button>
-          <div className={isMenuOpen ? "burgerLink__container" : "burgerLink__container show"}>
-            <a href="#about">{locale[context.local]["about"]}</a>
-            <a href="#stuck">{locale[context.local]["stuck"]}</a>
-            <a href="#projects">{locale[context.local]["project"]}</a>
-            <a href="#skills">{locale[context.local]["skill"]}</a>
-          </div>
+          <ul className={isMenuOpen ? "burgerLink__container" : "burgerLink__container show"}>
+            <li><a href="#about">{locale[context.local]["about"]}</a></li>
+            <li><a href="#stuck">{locale[context.local]["stuck"]}</a></li>
+            <li><a href="#projects">{locale[context.local]["project"]}</a></li>
+            <li><a href="#skills">{locale[context.local]["skill"]}</a></li>
+          </ul>
         </div>
         <div className={!isMenuOpen ? "menu-bg": "menu-bg change-bg"}></div>
         </>
     }
-      {width > 768 && <div className="nav__container">
-        <div className="navLink__container">
+      {width > 768 && <ul className="nav__container">
+        <li className="navLink__container">
           <a href="#about">{locale[context.local]["about"]}</a>
-        </div>
-        <div className="navLink__container">
+        </li>
+        <li className="navLink__container">
           <a href="#stuck">{locale[context.local]["stuck"]}</a>
-        </div>
-        <div className="navLink__container">
+        </li>
+        <li className="navLink__container">
           <a href="#projects">{locale[context.local]["project"]}</a>
-        </div>
-        <div className="navLink__container">
+        </li>
+        <li className="navLink__container">
           <a href="#skills">{locale[context.local]["skill"]}</a>
-        </div>
-      </div>}
+        </li>
+      </ul>}
       <div className="nav_vidget__container">
         <div className="theme__container">
           <p>{locale[context.local]["theme"]}</p>

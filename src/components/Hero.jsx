@@ -43,33 +43,35 @@ const Hero = () => {
           </ul>
         </div>
       </div>
-      <div className="hero__container hero__code" onMouseEnter={()=>setShowBtn(!showBtn)} onMouseLeave={()=>setShowBtn(!showBtn)}>
-        <p><span className="codePurple">const</span> <span className="codeFiol">car1</span> = &#123;</p>
-        <p>&#160;&#160;&#160;&#160;maker: <span className="codeYellow">&apos; Ford &apos;</span>,</p>
-        <p>&#160;&#160;&#160;&#160;model: <span className="codeYellow">&apos; Fiesta &apos;</span>,</p>
-        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span className="codeGreen">drive</span> <span className="codePurple">&#40;&#41; &#123;</span></p>
-        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span className="codePurple">console</span>.<span className="codeGreen">log</span> &#40;<span className="codeYellow">&#96;Driving a</span> $&#123;<span className="codeFiol">this</span>.maker&#125; $&#123;<span className="codeFiol">this</span>.model&#125; <span className="codeYellow">car!&#96;</span>&#41;&#59;</p>
-        <p>&#160;&#160;&#160;&#160;<span className="codePurple">&#125;</span></p>
-        <p>&#125;</p>
-        <p><span className="codePurple">const</span> <span className="codeFiol">anotherCar</span> = &#123;</p>
-        <p>&#160;&#160;&#160;&#160;maker: <span className="codeYellow">&apos; Audi &apos;</span>,</p>
-        <p>&#160;&#160;&#160;&#160;model: <span className="codeYellow">&apos; A4 &apos;</span></p>
-        <p>&#125;</p>
-        <p><span className="codeFiol">car1</span>.<span className="codeGreen">drive</span>.<span className="codeGreen">bind</span>&#40;<span className="codeFiol">anotherCar</span>&#41;&#40;&#41;</p>
-        <p><span className="codeGrey">&#47;&#47;Driving a Audi A4 car!</span></p>
-        <p><span className="codePurple">const</span> <span className="codeFiol">car2</span> = &#123;</p>
-        <p>&#160;&#160;&#160;&#160;maker: <span className="codeYellow">&apos; Ford &apos;</span>,</p>
-        <p>&#160;&#160;&#160;&#160;model: <span className="codeYellow">&apos; Fiesta &apos;</span>,</p>
-        <p>&#125;</p>
-        <p><span className="codePurple">const</span> <span className="codeGreen">drive</span> = <span className="codePurple">function</span>&#40;kmh&#41; &#123;</p>
-        <p>&#160;&#160;&#160;&#160;<span className="codePurple">console</span>.<span className="codeGreen">log</span>&#40; <span className="codeYellow">&#96;Driving a</span> $&#123;<span className="codeFiol">this</span>.maker&#125; $&#123;<span className="codeFiol">this</span>.model&#125; <span className="codeYellow">car at</span> $&#123;kmh&#125; <span className="codeYellow">km/h!&#96;</span>&#41;</p>
-        <p>&#125;</p>
-        <p><span className="codeGreen">drive</span>.<span className="codeGreen">call</span>&#40;<span className="codeFiol">car2</span>, <span className="codeFiol">100</span>&#41;</p>
-        <p><span className="codeGrey">&#47;&#47;Driving a Ford Fiesta car at 100 km/h!</span></p>
-        <p><span className="codeGreen">drive</span>.<span className="codeGreen">apply</span>&#40;<span className="codeFiol">car2</span>, [<span className="codeFiol">100</span>]&#41;</p>
-        <p><span className="codeGrey">&#47;&#47;Driving a Ford Fiesta car at 100 km/h!</span></p>
+      <pre className="hero__container hero__code" onMouseEnter={()=>setShowBtn(!showBtn)} onMouseLeave={()=>setShowBtn(!showBtn)}>
+          <p><span className="codePurple">const</span> <span className="codeFiol">car1</span> = &#123;</p>
+          <p>    maker: <span className="codeYellow">&apos; Ford &apos;</span>,</p>
+          <p>    model: <span className="codeYellow">&apos; Fiesta &apos;</span>,</p>
+          <p>        <span className="codeGreen">drive</span> <span className="codePurple">&#40;&#41; &#123;</span></p>
+          <p>    <span className="codePurple">console</span>.<span className="codeGreen">log</span> &#40;<span className="codeYellow">&#96;Driving a</span> $&#123;<span className="codeFiol">this</span>.maker&#125; $&#123;<span className="codeFiol">this</span>.model&#125;</p>
+          <p>    <span className="codeYellow">car!&#96;</span>&#41;&#59;</p>
+          <p>    <span className="codePurple">&#125;</span></p>
+          <p>&#125;</p>
+          <p><span className="codePurple">const</span> <span className="codeFiol">anotherCar</span> = &#123;</p>
+          <p>    maker: <span className="codeYellow">&apos; Audi &apos;</span>,</p>
+          <p>    model: <span className="codeYellow">&apos; A4 &apos;</span></p>
+          <p>&#125;</p>
+          <p><span className="codeFiol">car1</span>.<span className="codeGreen">drive</span>.<span className="codeGreen">bind</span>&#40;<span className="codeFiol">anotherCar</span>&#41;&#40;&#41;</p>
+          <p><span className="codeGrey">&#47;&#47;Driving a Audi A4 car!</span></p>
+          <p><span className="codePurple">const</span> <span className="codeFiol">car2</span> = &#123;</p>
+          <p>    maker: <span className="codeYellow">&apos; Ford &apos;</span>,</p>
+          <p>    model: <span className="codeYellow">&apos; Fiesta &apos;</span>,</p>
+          <p>&#125;</p>
+          <p><span className="codePurple">const</span> <span className="codeGreen">drive</span> = <span className="codePurple">function</span>&#40;kmh&#41; &#123;</p>
+          <p>    <span className="codePurple">console</span>.<span className="codeGreen">log</span>&#40; <span className="codeYellow">&#96;Driving a</span> $&#123;<span className="codeFiol">this</span>.maker&#125; $&#123;<span className="codeFiol">this</span>.model&#125; </p>
+          <p><span className="codeYellow">car at</span> $&#123;kmh&#125;<span className="codeYellow">km/h!&#96;</span>&#41;</p>
+          <p>&#125;</p>
+          <p><span className="codeGreen">drive</span>.<span className="codeGreen">call</span>&#40;<span className="codeFiol">car2</span>, <span className="codeFiol">100</span>&#41;</p>
+          <p><span className="codeGrey">&#47;&#47;Driving a Ford Fiesta car at 100 km/h!</span></p>
+          <p><span className="codeGreen">drive</span>.<span className="codeGreen">apply</span>&#40;<span className="codeFiol">car2</span>, [<span className="codeFiol">100</span>]&#41;</p>
+          <p><span className="codeGrey">&#47;&#47;Driving a Ford Fiesta car at 100 km/h!</span></p>
         {showBtn && <button onClick={(e)=>copyCode(e)}>{locale[context.local]["codecopy"]}</button>}
-      </div>
+      </pre>
     </section>
   )
 }
