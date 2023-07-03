@@ -50,6 +50,24 @@
         padding: 5px 0px;
     }
 }
+@media (max-width: 480px) {
+    .slider__container{
+        --image-hight: 110px;
+        height: 130px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .pictures__container img{
+        height: 90px;
+    }
+    .buttonArrow {
+        height: 20px;
+    }
+    .pictures__container p{
+        font-size: 0.7rem;
+        padding: 5px 0px;
+    }
+}
 
 
 

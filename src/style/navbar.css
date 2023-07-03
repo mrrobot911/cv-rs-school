@@ -212,3 +212,36 @@
         font-size: 1.4rem;
     }
 }
+@media (max-width: 480px) {
+    .navbar{
+        padding: 10px 5px;
+    }
+    .burgerLink__container{
+        font-size: 0.8em;
+    }
+    .nav_vidget__container{
+        align-items: end;
+    }
+    .theme__container {
+        max-width: 110px;
+    }
+    .theme__container p{
+        font-size: 0.8rem;
+    }
+    .internacionalization__container {
+        width: 100px;
+    }
+    .internacionalization__container label {
+        font-size: 0.9rem;
+        padding: 12px 8px;  
+    }
+    .internacionalization__container label:hover{
+        font-size: 1rem;
+    }
+    .change-bg {
+        z-index: 0;
+        width: 350px;
+        height: 330px;
+        transform: translate(-60%,-30%);
+    }
+}

@@ -60,3 +60,8 @@
         margin-right: 15px;
     }
 }
+@media (max-width: 480px) {
+    .skills__container {
+        width: 300px;
+    }
+}
