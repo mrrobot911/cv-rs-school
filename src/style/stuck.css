@@ -79,10 +79,10 @@
         height: 90px;
     }
     .buttonArrow {
-        height: 25px;
-    }
-    .buttonArrow {
         height: 30px;
+    }
+    .buttonArrow:hover {
+        height: 34px;
     }
     .pictures__container p{
         font-size: 0.7rem;
