@@ -18,7 +18,7 @@ function Stuck() {
     ["/images/gallery/nodejs.png", "nodejs"],
     ["/images/gallery/nextjs.png", "nextjs"],
   ];
-  const [ itemNum, setItemNum ] = useState(window.innerWidth <=768?3:5);
+  const [ itemNum, setItemNum ] = useState(window.innerWidth <=768?5:7);
   const [ number, setNumber ] = useState(itemNum);
   const [ picture, setPicture ] = useState(pictureState.slice(0,itemNum));
   const [ autoPlay, setAutoplay ] = useState(true);
@@ -26,11 +26,11 @@ function Stuck() {
   useEffect(() => {
     const handleResize = (event) => {
       if(event.target.innerWidth <=768){
-        setItemNum(3);
-        setPicture(pictureState.slice(0,3))
-      } else{
         setItemNum(5);
         setPicture(pictureState.slice(0,5))
+      } else{
+        setItemNum(7);
+        setPicture(pictureState.slice(0,7))
       }
     };
     window.addEventListener('resize', handleResize);
@@ -86,7 +86,9 @@ function Stuck() {
       <div className="slider__container">
         <button onClick={()=>numberPrev()}><img className="buttonArrow"src="/images/arrow-circle-left.svg"/></button>
           <div className="pictures__container">
-            {picture.map(el=><div 
+            {picture.map(el=>
+            el === picture[0] || el ===picture[picture.length-1] ? <div key={nanoid()} style={{display:'none'}}> <img src={el[0]}/></div>
+            :<div 
                 key={nanoid()} 
                 onMouseEnter={(e)=>e.currentTarget.children[1].style.visibility = 'visible'} 
                 onMouseLeave={(e)=>e.currentTarget.children[1].style.visibility = 'hidden'}
