@@ -34,7 +34,7 @@ function Skills() {
             {ide && 
             <article className="skills__List">
               <p>Visual Studio Code</p>
-              <p>Neo Vim</p>
+              <p>Neovim</p>
             </article>
             }
           <hr/> 
