@@ -84,7 +84,7 @@ function Stuck() {
     <section id="stuck" className="stuck__container">
       <h2>{locale[context.local]["stuck"]} :</h2>
       <div className="slider__container">
-        <button onClick={()=>numberPrev()}><img className="buttonArrow"src="/images/arrow-circle-left.svg"/></button>
+        <button onClick={()=>numberPrev()}><img className="buttonArrow"src="/images/arrow-circle-left.svg" alt={locale[context.local]["ar_left"]}/></button>
           <div className="pictures__container">
             {picture.map(el=>
             el === picture[0] || el ===picture[picture.length-1] ? <div key={nanoid()} style={{display:'none'}}> <img src={el[0]}/></div>
@@ -101,7 +101,7 @@ function Stuck() {
               <p>{el[1]}</p>
             </div>)}
           </div>
-        <button onClick={()=>numberNext()}><img className="buttonArrow"src="/images/arrow-circle-right.svg"/></button>
+        <button onClick={()=>numberNext()}><img className="buttonArrow"src="/images/arrow-circle-right.svg" alt={locale[context.local]["ar_right"]}/></button>
       </div>
     </section>
   )
